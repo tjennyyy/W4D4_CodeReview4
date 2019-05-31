@@ -54,11 +54,11 @@ public class Bike {
         this.state = state;
     }
 
-    /*
+/*
     public String toString(){
         return "Bike: " + this.getBikeID() + ", Color: " + this.getColour() + ", Status: " + this.getState();
     }
-    */
 
+*/
 }
 

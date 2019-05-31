@@ -1,3 +1,5 @@
+import java.net.UnknownServiceException;
+
 public class User {
 
     /*
@@ -15,23 +17,22 @@ public class User {
     static int userCounter;
 
 
-
-    public User (String firstname, String surname){
+    public User(String firstname, String surname) {
         this.UserID = userCounter++;
         this.firstname = firstname;
         this.surname = surname;
 
     }
 
-    public int getUserID(){
+    public int getUserID() {
         return this.UserID = UserID;
     }
 
-    public void setUserID(int UserID){
+    public void setUserID(int UserID) {
         this.UserID = UserID;
     }
 
-    public String getFirstname(){
+    public String getFirstname() {
         return this.firstname = firstname;
     }
 
@@ -39,23 +40,19 @@ public class User {
         this.firstname = firstname;
     }
 
-    public String getSurname(){
+    public String getSurname() {
         return this.surname = surname;
     }
 
-    public void setSurname(String surname){
+    public void setSurname(String surname) {
         this.surname = surname;
     }
 
-    public Bike getCurrentlyRentedBike(){
+    public Bike getCurrentlyRentedBike() {
         return this.currentlyRentedBike;
     }
 
-    public void setCurrentlyRentedBike(Bike currentlyRentedBike){
+    public void setCurrentlyRentedBike(Bike currentlyRentedBike) {
         this.currentlyRentedBike = currentlyRentedBike;
-    }
-
-    public void rentABike(Integer bikeID){
-
     }
 }

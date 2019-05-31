@@ -13,9 +13,9 @@ public class Main {
         */
 
         Bike b1 = new Bike("blue", Bike.BikeState.CanBeRended);
-        Bike b2 = new Bike("red", Bike.BikeState.CanNotRended);
-        Bike b3 = new Bike("green", Bike.BikeState.InService);
-        Bike b4 = new Bike("yellow", Bike.BikeState.Discarded);
+        Bike b2 = new Bike("red", Bike.BikeState.CanBeRended);
+        Bike b3 = new Bike("green", Bike.BikeState.CanBeRended);
+        Bike b4 = new Bike("yellow", Bike.BikeState.CanBeRended);
         Bike b5 = new Bike("grey", Bike.BikeState.CanBeRended);
         Bike b6 = new Bike("black", Bike.BikeState.InService);
         Bike b7 = new Bike("white", Bike.BikeState.CanNotRended);
@@ -31,9 +31,6 @@ public class Main {
         allBikes.put(b7.getBikeID(), b7.getState());
         allBikes.put(b8.getBikeID(), b8.getState());
 
-        System.out.println(allBikes.get(b1.getState()));
-        System.out.println(allBikes.get(b3.getBikeID()));
-        System.out.println(allBikes.get(b5.getColour()));
 
 
 
@@ -54,13 +51,13 @@ public class Main {
         Station s2 = new Station("Oper", bs2);
         Station s3 = new Station("Schwedenplatz", bs3);
 
-        HashMap<Integer, Station> allStations = new HashMap<>();
-        allStations.put(s1.getStationID(), s1);
-        allStations.put(s2.getStationID(), s2);
-        allStations.put(s3.getStationID(), s3);
+        HashMap<Integer, ArrayList<Bike>> allStations = new HashMap<>();
+        allStations.put(s1.getStationID(), s1.getBikeInAStation());
+        allStations.put(s2.getStationID(), s2.getBikeInAStation());
+        allStations.put(s3.getStationID(), s3.getBikeInAStation());
 
-        System.out.println(allStations.get(s1.getStationID()));
-        System.out.println(allStations.get(s2.getStationID()));
+
+
 
         /*
         (10) Create a method of Station class:
@@ -76,6 +73,10 @@ public class Main {
         s2.addBike(b6);
         s2.addBike(b7);
 
+        // add in station
+        s1.addBike(b4);
+        s1.addBike(b5);
+        s1.addBike(b6);
 
 
         /*
@@ -95,21 +96,13 @@ public class Main {
         User u7 = new User("Petra", "Flop");
         User u8 = new User("Peter", "Flop");
 
+        /*
         HashMap<Integer, User> allUsers = new HashMap<>();
         allUsers.put(u1.getUserID(), u1);
         allUsers.put(u2.getUserID(), u2);
         allUsers.put(u3.getUserID(), u3);
         allUsers.put(u4.getUserID(), u4);
-
-        System.out.println(allUsers.get(u3.getUserID()));
-        System.out.println("User :" + allUsers.get(u1));
-
-
-
-
-
-
-
+        */
 
 
 

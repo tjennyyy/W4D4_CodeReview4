@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.GregorianCalendar;
 
 public class Station {
 
@@ -49,7 +50,11 @@ public class Station {
     public void removeBike(Bike bike){
         this.bikeInAStation.remove(bike);
     }
+    public void rentBike(User user, Bike bike){
+        if(this.bikeInAStation.contains(bike) && bike.getState().equals(Bike.BikeState.CanBeRended) && user.getCurrentlyRentedBike() == null){
 
+        }
+    }
 
 }
 

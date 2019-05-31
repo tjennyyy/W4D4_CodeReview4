@@ -1,3 +1,5 @@
+package cityBike;
+
 import javax.swing.plaf.nimbus.State;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
@@ -5,13 +7,13 @@ import java.util.GregorianCalendar;
 public class Bike {
 
     /*
-    (10) Create a Java class Bike containing following parameters:
+    (10) Create a Java class cityBike.Bike containing following parameters:
            bikeID (Integer)
            color
            state (which can be CanBeRended, CanNotBeRented, InService, Discarded (aka so broken that the service do not pay off)
 
-     (10) Create a Bike constructor that is using a static variable to create and increment BikeID automatically on creation of new Bike object.
-     (10) Create 8 or more Bike objects in your main().
+     (10) Create a cityBike.Bike constructor that is using a static variable to create and increment BikeID automatically on creation of new cityBike.Bike object.
+     (10) Create 8 or more cityBike.Bike objects in your main().
      (10) Put in your main() all existing Bikes in a HashMap that uses bikeID as a source for key value.
     */
 
@@ -54,11 +56,5 @@ public class Bike {
         this.state = state;
     }
 
-/*
-    public String toString(){
-        return "Bike: " + this.getBikeID() + ", Color: " + this.getColour() + ", Status: " + this.getState();
-    }
-
-*/
 }
 

@@ -1,6 +1,8 @@
+package cityBike;
+
+import cityBike.Bike;
+
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.GregorianCalendar;
 
 public class Station {
 

@@ -1,3 +1,4 @@
+package cityBike;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -7,9 +8,9 @@ import java.util.GregorianCalendar;
 
     /*
         Additional points: 
-       (10) assure that a Station has the upper limit of bikes that can be returned (for instance, max 5 bikes).
+       (10) assure that a cityBike.Station has the upper limit of bikes that can be returned (for instance, max 5 bikes).
        If someone wants to call the method addBike(...), and the station is full, report that to the user over System.out.println() and prevent
-       (10) Add the rental tracking per user. User and Rent (new class) are connected, and the Rent class is tracking:
+       (10) Add the rental tracking per user. cityBike.User and cityBike.Rent (new class) are connected, and the cityBike.Rent class is tracking:
             BikeID,
             RentStart (DateTime)
             RentEnd (DateTime)  

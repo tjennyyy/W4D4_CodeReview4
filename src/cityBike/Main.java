@@ -1,4 +1,6 @@
-import java.awt.*;
+package cityBike;
+
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -8,7 +10,7 @@ public class Main {
 
 
         /*
-        (10) Create 8 or more Bike objects in your main().
+        (10) Create 8 or more cityBike.Bike objects in your main().
         (10) Put in your main() all existing Bikes in a HashMap that uses bikeID as a source for key value.
         */
 
@@ -40,7 +42,7 @@ public class Main {
              location (String)
              bikes: Bikes data structure is storing all Bikes that are currently in this station.
              Decide yourself what data structure you want to use
-        (10) Create 3 Station object in your main() and put them in a HashMap stations
+        (10) Create 3 cityBike.Station object in your main() and put them in a HashMap stations
         */
 
         ArrayList<Bike> bs1 = new ArrayList<>();
@@ -60,8 +62,8 @@ public class Main {
 
 
         /*
-        (10) Create a method of Station class:
-             addBike(... some parameter here ..) that is storing a Bike in a Station.
+        (10) Create a method of cityBike.Station class:
+             addBike(... some parameter here ..) that is storing a cityBike.Bike in a cityBike.Station.
         (10) Demonstrate the usage of addBike(...)  method by calling it in your main() method (put 3 bikes in Station1, and put 4 bikes in Station2).
         */
         s1.addBike(b1);
@@ -83,7 +85,7 @@ public class Main {
         Create 4 users.
         (5) demonstrate the rental procedure:
             UserZ rents a bike bikeX from stationY1
-            bikeX is removed from the data of that Station, and connected to a userZ
+            bikeX is removed from the data of that cityBike.Station, and connected to a userZ
             userZ returns a bike to stationY2
         */
 
@@ -97,7 +99,7 @@ public class Main {
         User u8 = new User("Peter", "Flop");
 
         /*
-        HashMap<Integer, User> allUsers = new HashMap<>();
+        HashMap<Integer, cityBike.User> allUsers = new HashMap<>();
         allUsers.put(u1.getUserID(), u1);
         allUsers.put(u2.getUserID(), u2);
         allUsers.put(u3.getUserID(), u3);

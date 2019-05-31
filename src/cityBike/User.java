@@ -1,13 +1,15 @@
-import java.net.UnknownServiceException;
+package cityBike;
+
+import cityBike.Bike;
 
 public class User {
 
     /*
-    (10) Create User class with parameters:
+    (10) Create cityBike.User class with parameters:
          userID
          name
          surname
-        currentlyRentedBike: decide yourself if you are using a Bike object, or a key (depending on your data model).
+        currentlyRentedBike: decide yourself if you are using a cityBike.Bike object, or a key (depending on your data model).
     */
 
     private int UserID;

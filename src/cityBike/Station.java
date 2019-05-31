@@ -3,6 +3,7 @@ package cityBike;
 import cityBike.Bike;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Station {
 
@@ -42,7 +43,14 @@ public class Station {
     }
 
     public void addBike (Bike bike) {
-       // this.bikeInAStation().add(bikeID);
+        this.bikeInAStation().add(bike);
+    }
+
+    private Collection<Bike> bikeInAStation() {
+        return null;
+    }
+
+    public void returnBike (Bike bike){
         if (bikeInAStation.size() >= 5){
             System.out.println("Sorry, already full");
         }else {
@@ -51,8 +59,6 @@ public class Station {
     }
     public void removeBike(Bike bike){
         this.bikeInAStation.remove(bike);
-    }
-    public void rentBike(User user, Bike bike){
 
     }
 

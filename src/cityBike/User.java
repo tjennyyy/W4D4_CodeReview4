@@ -1,6 +1,5 @@
 package cityBike;
 
-import cityBike.Bike;
 
 public class User {
 

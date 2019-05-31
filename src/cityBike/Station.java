@@ -9,7 +9,7 @@ public class Station {
     private Integer stationID;
     private String location;
     private ArrayList<Bike> bikeInAStation;
-    private static int stationCounter = 0;
+    private static int stationCounter = 1;
 
 
     public Station(String location, ArrayList<Bike> bikeInAStation){
@@ -53,9 +53,7 @@ public class Station {
         this.bikeInAStation.remove(bike);
     }
     public void rentBike(User user, Bike bike){
-        if(this.bikeInAStation.contains(bike) && bike.getState().equals(Bike.BikeState.CanBeRended) && user.getCurrentlyRentedBike() == null){
 
-        }
     }
 
 }
